@@ -16,8 +16,7 @@ $ ffmpeg -i boring.mp4 -ss 00:00:03 -t 00:00:08 -async 1 focus.mp4
 ### Convert mp4 to GIF
 $ ffmpeg -ss 0 -t 10 -i xn.mp4 -vf "fps=10,scale=640:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 xn.gif
 
-### Check MP4 Meta Data
-$ ffmpeg -i in.mp4 -f ffmetadata in.txt
+### Check MP4 Meta Data   
 $ ffmpeg -i in.mp4 -c copy -map_metadata 0 -map_metadata:s:v 0:s:v -map_metadata:s:a 0:s:a -f ffmetadata in.txt
 
 ### Flip and Rotate Video 360
