@@ -46,7 +46,10 @@ $ ffmpeg -re -stream_loop -1 -i bodycam_08012022.mov -c copy -f rtsp rtsp://loca
 $ ffmpeg -f avfoundation -list_devices true -i ""
 ```
 
-### Record Video and Audio to an mp4 files
+### Record Webcam to an mp4 files
 ```
 $ ffmpeg -f avfoundation -framerate 30 -video_size 1280x960 -i "0:0" "../output.mp4"
 ```
+
+### Record IP RTSP Stream to mp4 files
+$ ffmpeg -i "rtsp://username:password@192.168.1.123:554/onvif1" "../recorded.mp4"
