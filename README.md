@@ -68,5 +68,5 @@ $ ffmpeg -f concat -safe 0 -i mylist.txt -c copy 2022_08_21_fish_navigation.mp4
 
 ### Generating png images from an mp4 video
 ```
-$ ffmpeg -i Matrix_Challenge.mp4 -vf fps=1/6 thumb%04d.png
+$ ffmpeg -i Matrix_Challenge.mp4 -vf fps=1 thumb%04d.png
 ```
