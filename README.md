@@ -72,4 +72,6 @@ $ ffmpeg -i Matrix_Challenge.mp4 -vf fps=1 thumb%04d.png
 ```
 
 ### Splitting Videos into one second strunk
+```
 $ ffmpeg -i 400x_07_27_2022.mp4 -c copy -map 0 -segment_time 1 -f segment output_video%03d.mp4
+```
