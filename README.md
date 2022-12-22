@@ -56,7 +56,7 @@ $ ffmpeg -f avfoundation -framerate 30 -video_size 1280x960 -i "0:0" "../output.
 $ ffmpeg -i "rtsp://username:password@192.168.1.123:554/onvif1" "../recorded.mp4"
 ```
 
-### Combine Video Files into one single one and saved as mp4 or desired format
+### Combine Image Files into one MP4 video
 Create Bash script with concat.sh with content with create list of all files in folder
 ```
 for f in *.av; do echo "file '$f'" >> mylist.txt; done
